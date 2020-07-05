@@ -2,14 +2,13 @@
   "pages": [
    "pages/index/index",
   "pages/location/location",
-  "pages/station/station",
   "pages/lo_fo/lo_fo"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "HustBus",
+    "navigationBarTitleText": "HUSTBus",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -26,11 +25,6 @@
         "iconPath":"images/location.png",
         "selectedIconPath":"images/location_selected.png"
       },{
-        "pagePath":"pages/station/station",
-        "text":"车站",
-        "iconPath":"images/station.png",
-        "selectedIconPath":"images/station_selected.png"
-      },{
         "pagePath":"pages/lo_fo/lo_fo",
         "text":"失物招领",
         "iconPath":"images/lo_fo.png",
@@ -38,5 +32,10 @@
       }]
   },
   "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "style": "v2",
+  "permission":{
+    "scope.userLocation":{
+      "desc":"你的位置信息将用于小程序位置接口的服务"
+    }
+  }
 }
