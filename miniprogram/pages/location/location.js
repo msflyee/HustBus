@@ -7,6 +7,9 @@ Page({
   /**
    * 页面的初始数据
    */
+  data: {
+    openid:'',
+
   data:{
     flag:false,
     latitude:"",
@@ -145,6 +148,7 @@ width:2
     }
     })
   },
+  
 
   /* 将实时位置上传到数据库 */
   uploadLoc:function()
@@ -209,6 +213,15 @@ width:2
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.cloud.callFunction({
+      name: 'add',
+      success: function(res) {
+        console.log('更新成功')
+      },
+      fail: console.error
+    })
+
+
     var that = this;
     this.userRec();
     this.showLoc();
@@ -262,5 +275,6 @@ width:2
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  
 })

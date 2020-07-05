@@ -3,12 +3,19 @@ const app = getApp()
 
 Page({
   data: {
+    swiperImage:[
+      "/images/swiper1.jpg",
+      "/images/swiper2.jpg",
+      "/images/swiper3.jpg",
+    ],
     avatarUrl: './user-unlogin.png',
     userInfo: {},
     logged: false,
     takeSession: false,
     requestResult: '',
-    openid:''
+    interval: 3000,
+    duration: 800,
+
   },
 
   onLoad: function() {
@@ -51,7 +58,6 @@ Page({
       }
     })
   },
-
   onGetUserInfo: function(e) {
     if (!this.data.logged && e.detail.userInfo) {
       this.setData({
@@ -118,3 +124,4 @@ Page({
   },*/
 
 })
+
