@@ -1,7 +1,6 @@
 <!--index.wxml-->
 <view>
 
-
     <view class="content">
         <image class="background1" src="/images/background2.jpg" mode="aspectFill">
         </image>
@@ -23,9 +22,5 @@
 <view class="timetable"><text>时间表
 "00:00-24:00"</text>
 </view>
-
-
-
-
-  
 </view>
+
