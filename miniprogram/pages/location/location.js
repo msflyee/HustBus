@@ -5,13 +5,22 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    openid:'',
   },
+  
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.cloud.callFunction({
+      name: 'add',
+      success: function(res) {
+        console.log('更新成功')
+      },
+      fail: console.error
+    })
+
 
   },
 
@@ -62,5 +71,6 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  
 })

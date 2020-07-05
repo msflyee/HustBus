@@ -3,14 +3,25 @@ const app = getApp()
 
 Page({
   data: {
+    swiperImage:[
+      "/images/swiper1.jpg",
+      "/images/swiper2.jpg",
+      "/images/swiper3.jpg",
+    ],
     avatarUrl: './user-unlogin.png',
     userInfo: {},
     logged: false,
     takeSession: false,
-    requestResult: ''
+    requestResult: '',
+
+    interval: 3000,
+    duration: 800,
+
   },
 
-  onLoad: function() {
+
+
+onLoad: function() {
     if (!wx.cloud) {
       wx.redirectTo({
         url: '../chooseLib/chooseLib',
@@ -66,7 +77,7 @@ Page({
       }
     })
   },
-
+/*
   // 上传图片
   doUpload: function () {
     // 选择图片
@@ -115,6 +126,7 @@ Page({
         console.error(e)
       }
     })
-  },
+  },*/
 
 })
+
