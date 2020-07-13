@@ -1,25 +1,28 @@
 <!--index.wxml-->
 <view>
-
-    <view class="content">
-        <image class="background1" src="/images/background2.jpg" mode="aspectFill">
-        </image>
-    </view>
-
-    <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
-        <block wx:for="{{swiperImage}}" wx:key="{{index}}">
+    <wux-notice-bar loop>
+            小程序正在开发中tututututututututtututututusfsffsdfsfsdf
+    </wux-notice-bar>
+    <swiper class = "swiper" indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
+        <block wx:for="{{swiperImages}}" wx:key="index">
             <swiper-item>
-                <image src="{{item}}" class="slide-image" width="100%"/>
+                    <image src="{{item}}" class="slide-image" width="100%"/>
             </swiper-item>
         </block>
     </swiper>
-     
-
-
-
-  
 <view class="timetable"><text>时间表
 "00:00-24:00"</text>
 </view>
+=======
+    <view class = "page-body">
+        <view class="content">
+            <image class="background1" src="/images/background2.jpg" mode="aspectFill">
+            </image>
+        </view>
+    </view>
+    <view class="timetable">
+        <text>运营时间：06:00-22:00</text>
+    </view>
+
 </view>
 

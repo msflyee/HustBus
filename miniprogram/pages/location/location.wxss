@@ -1,7 +1,12 @@
 /* pages/location/location.wxss */
+
 .map{
   position:"fixed";
   width: 100%;
   height: 100%;
   display: flex;
+}
+.image{
+  display:flex;
+  justify-content:center;
 }

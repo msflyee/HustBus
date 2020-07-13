@@ -9,7 +9,5 @@
      <view class="profession"><cover-image class="logo"  src="../../images/学院logo.png"  bindtap="" ></cover-image></view>
      <view class="dormitory"><cover-image class="logo"  src="../../images/宿舍logo.png"  bindtap="" ></cover-image></view>
 </map>
- 
- 
-
  <!--以图书馆为中心的地图显示-->
+<text>lo_fo</text>
