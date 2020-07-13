@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/lo_fo/lo_fo",
    "pages/index/index",
-  "pages/location/location",
-  "pages/lo_fo/lo_fo"
+  "pages/location/location"
+  
   ],
   "entranceDeclare": {
     "locationMessage": {
@@ -32,7 +33,7 @@
         "selectedIconPath":"images/location_selected.png"
       },{
         "pagePath":"pages/lo_fo/lo_fo",
-        "text":"失物招领",
+        "text":"校园地图",
         "iconPath":"images/lo_fo.png",
         "selectedIconPath":"images/lo_fo_selected.png"
       }]
@@ -44,4 +45,5 @@
       "desc":"你的位置信息将用于小程序位置接口的服务"
     }
   }
+  
 }

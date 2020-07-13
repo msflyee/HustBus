@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+
+  "usingComponents": {
+    "wux-button": "../../lib/button/index"
+}
 }
