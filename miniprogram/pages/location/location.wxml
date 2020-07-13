@@ -1,2 +1,11 @@
 <!--pages/location/location.wxml-->
-<text>pages/location/location.wxml</text>
+<view class = "page-body">
+  <view class = "map">
+    <map id = "map-1" style = "width:100%;height:400px" longitude="{{longitude}}" latitude = "{{latitude}}" scale = "15" markers = "{{markers}}" polyline = "{{polyline}}"></map>
+  </view>
+  <block wx:if = "{{flag}}">
+    <view class = "btn_area" >
+      <button type = "primary" bindtap="uploadLoc" >上传实时位置</button>
+    </view>
+  </block>
+</view>
