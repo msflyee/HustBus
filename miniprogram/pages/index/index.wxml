@@ -10,6 +10,10 @@
             </swiper-item>
         </block>
     </swiper>
+<view class="timetable"><text>时间表
+"00:00-24:00"</text>
+</view>
+=======
     <view class = "page-body">
         <view class="content">
             <image class="background1" src="/images/background2.jpg" mode="aspectFill">
@@ -19,5 +23,6 @@
     <view class="timetable">
         <text>运营时间：06:00-22:00</text>
     </view>
+
 </view>
 
