@@ -3,11 +3,12 @@ const app = getApp()
 
 Page({
   data: {
-    swiperImage:[
+    swiperImages:[
       "/images/swiper1.jpg",
       "/images/swiper2.jpg",
       "/images/swiper3.jpg",
     ],
+
     avatarUrl: './user-unlogin.png',
     userInfo: {},
     logged: false,

@@ -169,11 +169,14 @@ page{
   line-height: 36rpx;
   word-break: break-all;
 }
-swiper {
+.swiper {
   height: 300rpx;
-  left:0;
-  right:0;
+  width:100%;
   text-align:center;
+}
+
+swiper image {
+  width:100%
 }
 
 .timetable{

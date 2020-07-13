@@ -1,11 +1,33 @@
 <!--pages/location/location.wxml-->
-<view class = "page-body">
-  <view class = "map">
-    <map id = "map-1" style = "width:100%;height:400px" longitude="{{longitude}}" latitude = "{{latitude}}" scale = "15" markers = "{{markers}}" polyline = "{{polyline}}"></map>
-  </view>
-  <block wx:if = "{{flag}}">
-    <view class = "btn_area" >
-      <button type = "primary" bindtap="uploadLoc" >上传实时位置</button>
+  <view class = "page-body">
+    <view class = "map">
+      <map id = "map-1" style = "width:100%;height:470px" longitude="{{longitude}}" latitude = "{{latitude}}" scale = "18" markers = "{{markers}}" polyline = "{{polyline}}"></map>
     </view>
-  </block>
-</view>
+    <block wx:if = "{{flag}}">
+      <view class = "btn_area" >
+        <button type = "primary" bindtap="uploadLoc" >上传实时位置</button>
+      </view>
+    </block>
+    <!--后期加上这个block，把用户和司机端的显示区分开，司机端看不到选择站点-->
+   <!--<block wx:if = "{{!flag}}">--> 
+      <view style = "display:flex">
+        <view class = "wux-picker" style = "flex-grow:1;">
+          <wux-picker options="{{ options1 }}" value="{{ value3 }}" cascade cols="1" data-index="1" bind:confirm="onConfirm1" bind:valueChange="onValueChange">
+                  <wux-cell title="出发站" is-link extra="{{ displayValue1 }}"></wux-cell>
+          </wux-picker>
+        </view>
+        <view class = "image" style = "flex-grow:1;">
+            <image class ="image" style = "width:80rpx;height:80rpx" src = "/images/route.png"></image>
+        </view>
+        <view class = "wux-picker" style = "flex-grow:1;">
+          <wux-picker options="{{ options2 }}" value="{{ value }}" cascade cols="1" data-index="2" bind:confirm="onConfirm2" bind:valueChange="onValueChange">
+                  <wux-cell title="终点站" is-link extra="{{ displayValue2 }}"></wux-cell>
+          </wux-picker>
+        </view>
+      </view>
+      <text>\n</text>
+      <view class = "btn_area" >
+          <button type = "primary" bindtap="confirmRoute" >确认路线</button>
+      </view>
+   <!--</block>--> 
+  </view>

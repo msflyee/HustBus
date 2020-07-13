@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "NoticeBar",
+  "usingComponents": {
+    "wux-notice-bar": "/lib/notice-bar/index"
+  }
 }
