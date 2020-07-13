@@ -7,10 +7,69 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {
-    openid:'',
-
   data:{
+    diaplayvalue1:"请选择",
+    diaplayvalue2:"请选择",
+    value:[],
+    options1:[
+      {
+        value:"yy1",
+        label:"韵苑"
+      },
+      {
+        value:"dj",
+        label:"东九教学楼"
+      },
+      {
+        value:"yy2",
+        label:"喻园"
+      },
+      {
+        value:"jm&gl",
+        label:"集贸&管理学院"
+      },
+      {
+        value:"zs",
+        label:"紫崧"
+      }, {
+        value:"xdm",
+        label:"校大门"
+      }],
+    options2:[
+      {
+        value:"yy1",
+        label:"韵苑"
+      },
+      {
+        value:"dj",
+        label:"东九教学楼"
+      },
+      {
+        value:"yy2",
+        label:"喻园"
+      },
+      {
+        value:"jm&gl",
+        label:"集贸&管理学院"
+      },
+      {
+        value:"zs",
+        label:"紫崧"
+      }, {
+        value:"xdm",
+        label:"校大门"
+      }],
+    index_1: 0,
+    index_2: 0,
+    stations:[
+      "韵苑",
+      "东九教学楼",
+      "紫崧",
+      "喻园",
+      "集贸&管理学院",
+      "图书馆",
+      "校大门"
+    ],
     flag:false,
     latitude:"",
     longitude:"",
@@ -123,6 +182,35 @@ color:"#33c9FFDD",
 width:2
     }]
   },
+  //将选中的站点显示出来
+  setValue:function(values, key) {
+    this.setData({
+        [`value${key}`]: values.value,
+        [`displayValue${key}`]: values.label,
+    })
+},
+//监听在菜单中滑到了哪一个站点
+onValueChange:function(e){
+  const index = e.currentTarget.dataset
+  console.log('onValueChange${index',e.detail.value[0])
+},
+//1在弹出的选择菜单中选择站点并确认
+  onConfirm1:function(e) {
+    const { index } = e.currentTarget.dataset
+    this.setValue(e.detail, index)
+    console.log(`onConfirm${index}`, e.detail)
+},
+//2在弹出的选择菜单中选择站点并确认 两个函数相同 区分开来是为了将出发和终点站分别存在缓存里 以便在confirmRoute函数中使用用以确定是哪条路线，来将该路线的地图标点显示在地图上
+onConfirm2:function(e) {
+  const { index } = e.currentTarget.dataset
+  this.setValue(e.detail, index)
+  console.log(`onConfirm${index}`, e.detail)
+},
+//确定是哪条路线，来将该路线的地图标点显示在地图上
+  confirmRoute:function()
+  {
+
+  },
   /* 根据用户权限来选择是否显示位置上传按钮 */
  userRec:function()
   {
@@ -148,8 +236,6 @@ width:2
     }
     })
   },
-  
-
   /* 将实时位置上传到数据库 */
   uploadLoc:function()
   {
@@ -188,7 +274,6 @@ width:2
       markers.push(marker)
     }
     return markers;
-    
   },
   /* 监听数据库变化并将最新所有坐标点显示在页面上 */
   showLoc:function(){
@@ -220,8 +305,6 @@ width:2
       },
       fail: console.error
     })
-
-
     var that = this;
     this.userRec();
     this.showLoc();
