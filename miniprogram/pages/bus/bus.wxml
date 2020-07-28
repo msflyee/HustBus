@@ -1,7 +1,8 @@
 <!--pages/location/location.wxml-->
   <view class = "page-body">
     <view class = "map">
-      <map id = "map-1" style = "width:100%;height:470px" longitude="{{longitude}}" latitude = "{{latitude}}" scale = "18" markers = "{{markers}}" polyline = "{{polyline}}"></map>
+      <map id = "map-1" style = "width:100%;height:470px"  longitude="114.419544" 
+      latitude="30.509537"   scale = "18" markers = "{{markers}}"   polyline = "{{polyline_onshow}}"></map>
     </view>
     <block wx:if = "{{flag}}">
       <view class = "btn_area" >

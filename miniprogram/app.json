@@ -7,7 +7,6 @@
     "pages/feedback/feedback",
     "pages/route/route",
     "pages/team/team"
-    
   ],
   "entranceDeclare": {
     "locationMessage": {
