@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view>
+<view class = "page">
     <wux-notice-bar loop>
             小程序正在开发中tututututututututtututututusfsffsdfsfsdf
     </wux-notice-bar>
@@ -11,13 +11,31 @@
         </block>
     </swiper>
     <view class = "page-body">
-        <view class="content">
-            <image class="background1" src="/images/background2.jpg" mode="aspectFill">
-            </image>
+        <!--<image class="background1" src="/images/background2.jpg" mode="aspectFill"> </image>-->
+        <view class = "row" style = "display:flex">
+            <navigator url = " /pages/lo_fo/lo_fo" hoverclass = "navigator-hover" class = "nav1">
+                <image src = "/images/index_route.png" mode = "aspectfill" class = "route_info"></image>
+                 <view class = "intro1">校车路线</view>
+            </navigator>
+            <navigator url = "/pages/lo_fo/lo_fo" hoverclass = "navigator-hover" class = "nav2">
+                <image src = "/images/lofo.png" mode = "aspectfill" class = "lo_fo"></image>
+                <view class = "intro2">失物招领</view>
+            </navigator>
+        </view>
+        <view class = "row" style = "display:flex">
+            <navigator url = " /pages/feedback/feedback" hoverclass = "navigator-hover" class = "nav3">
+                <image src = "/images/feedback.png" mode = "aspectfill" class = "feedback"></image>
+                <view class = "intro3">使用反馈</view>
+            </navigator>
+            <navigator url = "/pages/team/team" hoverclass = "navigator-hover" class = "nav4">
+                <image src = "/images/team.png" mode = "aspectfill" class = "team"></image>
+                <view class = "intro4">开发团队</view>
+            </navigator>
+        </view>
+        <view class="timetable">
+            <text>校车运营时间：06:00-22:00</text>
         </view>
     </view>
-    <view class="timetable">
-        <text>运营时间：06:00-22:00</text>
-    </view>
+
 </view>
 

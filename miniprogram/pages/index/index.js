@@ -16,7 +16,7 @@ Page({
     requestResult: '',
     interval: 3000,
     duration: 800,
-
+    openid:""
   },
 
   onLoad: function() {
@@ -46,10 +46,6 @@ Page({
             openid:res.result.openid
         })
         app.globalData.openid = res.result.openid
-       
-        /*wx.navigateTo({
-          url: '../userConsole/userConsole',
-        })*/
       },
       fail: err => {
         console.error('[云函数] [login] 调用失败', err)
