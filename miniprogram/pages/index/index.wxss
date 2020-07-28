@@ -189,3 +189,98 @@ swiper image {
   background-color: red;
   line-height: 50px;
 }
+
+.row{
+  justify-content: space-around;
+  flex-direction: row;
+}
+.nav1{
+  width: 130rpx;      
+  height: 130rpx;   
+  top:20px;
+  left:40px;
+  position:relative;
+}
+.route_info{
+  width:130rpx;
+  height:130rpx;
+  background-color:#ffffff;
+}
+
+.nav2{
+  width: 130rpx;      
+  height: 130rpx;   
+  display: inline-block;
+  top:20px;
+  right:40px;
+  position:relative;
+}
+
+.lo_fo{
+  width:130rpx;
+  height:130rpx;
+  background-color: #ffffff;
+}
+
+.nav3{
+  width: 130rpx;      
+  height: 130rpx;   
+  display: inline-block;
+  top:50px;
+  left:40px;
+  position:relative;
+}
+
+.feedback{
+  width:130rpx;
+  height:130rpx;
+  background-color: #ffffff;
+}
+
+.nav4{
+  width: 130rpx;      
+  height: 130rpx;   
+  display: inline-block;
+  top:50px;
+  right:40px;
+  position:relative;
+}
+
+.team{
+  width:130rpx;
+  height:130rpx;
+  background-color: #ffffff;
+  
+}
+
+.intro1{
+  font-size: 12px;         
+  height: 20px;               
+  text-align: center;         
+  line-height: 20px; 
+
+}
+
+.intro2{
+  font-size: 12px;         
+  height: 20px;               
+  text-align: center;         
+  line-height: 20px; 
+  
+}
+
+.intro3{
+  font-size: 12px;         
+  height: 20px;               
+  text-align: center;         
+  line-height: 20px; 
+  
+}
+
+.intro4{
+  font-size: 12px;         
+  height: 20px;               
+  text-align: center;         
+  line-height: 20px; 
+  
+}
