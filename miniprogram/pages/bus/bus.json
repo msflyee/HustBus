@@ -1,0 +1,7 @@
+{
+  "usingComponents": 
+  {
+    "wux-picker": "/lib/picker/index",
+    "wux-cell": "/lib/cell/index"
+  }
+}

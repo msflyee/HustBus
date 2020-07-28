@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "HUSTBus",
+  "usingComponents": {
+    "wux-notice-bar": "/lib/notice-bar/index",
+    "wux-button": "/lib/button/index"
+  }
+}

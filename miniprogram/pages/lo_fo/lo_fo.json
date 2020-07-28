@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"失物招领",
+  "usingComponents": {
+    "wux-search-bar":"/lib/search-bar/index"
+  }
+}

@@ -1,0 +1,47 @@
+.logo{
+  width:100rpx;
+  height:100rpx
+}
+.lib{
+  bottom: 170rpx;
+  margin-left: 30rpx;
+  position: absolute;
+}
+
+.supermarket{
+  bottom: 170rpx;
+  margin-left: 230rpx;
+  position: absolute;
+}
+.dormitory{
+  bottom:170rpx;
+  margin-left: 430rpx;
+  position: absolute;
+
+}
+.canteen{
+  bottom: 170rpx;
+  margin-left: 630rpx;
+  position: absolute;
+
+}
+.classroom{
+  bottom: 40rpx;
+  margin-left: 30rpx;
+  position: absolute;
+}
+.hospital{
+  bottom: 40rpx;
+  margin-left: 230rpx;
+  position: absolute;
+}
+.playground{
+  bottom:40rpx;
+  margin-left: 430rpx;
+  position: absolute;
+}
+.profession{
+  bottom: 40rpx;
+  margin-left: 630rpx;
+  position: absolute;
+}
