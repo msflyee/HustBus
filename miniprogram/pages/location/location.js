@@ -8,6 +8,8 @@ Page({
    * 页面的初始数据
    */
   data:{
+    s1:"",
+    s2:"",
     diaplayvalue1:"请选择",
     diaplayvalue2:"请选择",
     value:[],
@@ -70,10 +72,286 @@ Page({
       "图书馆",
       "校大门"
     ],
+    yy1:{
+    longitude:"114.432220" ,
+    latitude:"30.514126",
+    title:"韵苑" ,
+    iconPath:"../../images/教室.png",
+    width:30,
+    height:30
+    },
+    dj:{
+      longitude:"114.427017" ,
+      latitude:"30.514787",
+
+    },
+    yy2:{
+      latitude:"30.515365",
+      longitude:"114.421148"
+    },
+    jmgl:{
+      latitude:30.515859,
+      longitude:114.416047
+    },
+    
+    routes:[
+    [[],//0 韵苑韵苑
+    [{
+   
+      points: [{
+        longitude:"114.432269" ,
+        latitude:"30.514173"
+        },
+         {
+          longitude:"114.427017" ,
+          latitude:"30.514787"
+        }
+      ],
+      color: "#33c9FFDD",
+      width: 4,
+  
+    }],[//1  韵苑东九
+      {
+   
+        points: [{
+          longitude:"114.432269" ,
+          latitude:"30.514173"
+          },
+           {
+            longitude:"114.427017" ,
+            latitude:"30.514787"
+          },
+          {
+            latitude:"30.515365",
+            longitude:"114.421148"
+          }
+        ],
+        color: "#33c9FFDD",
+        width: 4,
+    
+      }//2韵苑喻园
+    ],
+    [{
+   
+      points: [{
+        longitude:"114.432269" ,
+        latitude:"30.514173"
+        },
+         {
+          longitude:"114.427017" ,
+          latitude:"30.514787"
+        },
+        {
+          latitude:"30.515365",
+          longitude:"114.421148"
+        },
+        {
+          latitude:30.515859,
+          longitude:114.416047
+        }
+      ],
+      color: "#33c9FFDD",
+      width: 4,
+  
+    }],//3韵苑集贸
+    []],//数组0
+    [[{
+   
+      points: [{
+        longitude:"114.432269" ,
+        latitude:"30.514173"
+        },
+         {
+          longitude:"114.427017" ,
+          latitude:"30.514787"
+        },
+      ],
+      color: "#33c9FFDD",
+      width: 4,
+  
+    }],//0
+    [],//1
+    [{
+   
+      points: [
+         {
+          longitude:"114.427017" ,
+          latitude:"30.514787"
+        },
+        {
+          latitude:"30.515365",
+          longitude:"114.421148"
+        }
+      ],
+      color: "#33c9FFDD",
+      width: 4,
+  
+    }],//2
+    [{
+   
+      points: [
+         {
+          longitude:"114.427017" ,
+          latitude:"30.514787"
+        },
+        {
+          latitude:"30.515365",
+          longitude:"114.421148"
+        },
+        {
+          latitude:30.515859,
+          longitude:114.416047
+        }
+      ],
+      color: "#33c9FFDD",
+      width: 4,
+  
+    }],//3
+    []//4
+  ],//数组1
+  [[
+      {
+   
+        points: [{
+          longitude:"114.432269" ,
+          latitude:"30.514173"
+          },
+           {
+            longitude:"114.427017" ,
+            latitude:"30.514787"
+          },
+          {
+            latitude:"30.515365",
+            longitude:"114.421148"
+          }
+        ],
+        color: "#33c9FFDD",
+        width: 4,
+    
+      }
+    ],//0
+    [{
+   
+      points: [
+         {
+          longitude:"114.427017" ,
+          latitude:"30.514787"
+        },
+        {
+          latitude:"30.515365",
+          longitude:"114.421148"
+        }
+      ],
+      color: "#33c9FFDD",
+      width: 4,
+  
+    }],//1
+    [],//2
+    [{
+   
+      points: [
+         
+        {
+          latitude:"30.515365",
+          longitude:"114.421148"
+        },
+        {
+          latitude:30.515859,
+          longitude:114.416047
+        }
+      ],
+      color: "#33c9FFDD",
+      width: 4,
+  
+    }],//3
+    []//4
+  ],//数组2
+  [[{
+   
+      points: [{
+        longitude:"114.432269" ,
+        latitude:"30.514173"
+        },
+         {
+          longitude:"114.427017" ,
+          latitude:"30.514787"
+        },
+        {
+          latitude:"30.515365",
+          longitude:"114.421148"
+        },
+        {
+          latitude:30.515859,
+          longitude:114.416047
+        }
+      ],
+      color: "#33c9FFDD",
+      width: 4,
+  
+    }],//0
+    [{
+   
+      points: [
+         {
+          longitude:"114.427017" ,
+          latitude:"30.514787"
+        },
+        {
+          latitude:"30.515365",
+          longitude:"114.421148"
+        },
+        {
+          latitude:30.515859,
+          longitude:114.416047
+        }
+      ],
+      color: "#33c9FFDD",
+      width: 4,
+  
+    }],//1
+    [{
+   
+      points: [
+         
+        {
+          latitude:"30.515365",
+          longitude:"114.421148"
+        },
+        {
+          latitude:30.515859,
+          longitude:114.416047
+        }
+      ],
+      color: "#33c9FFDD",
+      width: 4,
+  
+    }],//2
+    [],//3
+    []//4
+  ],//数组3
+    [],//数组4
+    []//数组5
+  ],
     flag:false,
     latitude:"",
     longitude:"",
-    markers:[],
+    markers:[{
+    longitude:"" ,
+    latitude:"",
+    iconPath:"../../images/教室.png",
+    width:30,
+    height:30},
+      {
+    longitude:"" ,
+    latitude:"",
+    iconPath:"../../images/教室.png",
+    width:30,
+    height:30
+      } ],
+   
+    polyline_onshow:[],
+
+
     polyline:[{
       points:[{
         //校大门
@@ -193,25 +471,102 @@ width:2
 onValueChange:function(e){
   const index = e.currentTarget.dataset
   console.log('onValueChange${index',e.detail.value[0])
+  console.log("qwer")
 },
 //1在弹出的选择菜单中选择站点并确认
   onConfirm1:function(e) {
     const { index } = e.currentTarget.dataset
     this.setValue(e.detail, index)
     console.log(`onConfirm${index}`, e.detail)
+    if (e.detail.value[0]=="yy1"){
+      var yy1=this.data.yy1
+      this.setData({
+        'markers[0].longitude':yy1.longitude,
+        'markers[0].latitude':yy1.latitude,
+        's1':0
+      })
+    }
+    if (e.detail.value[0]=="dj"){
+      var dj=this.data.dj
+      this.setData({
+        'markers[0].longitude':dj.longitude,
+        'markers[0].latitude':dj.latitude,
+        's1':1
+      })
+    }
+    if (e.detail.value[0]=="yy2"){
+      var yy1=this.data.yy2
+      this.setData({
+        'markers[0].longitude':yy1.longitude,
+        'markers[0].latitude':yy1.latitude,
+        's1':2
+      })
+    }
+    if (e.detail.value[0]=="jm&gl"){
+      var m=this.data.jmgl
+      this.setData({
+        'markers[0].longitude':m.longitude,
+        'markers[0].latitude':m.latitude,
+        's1':3
+      })
+    }
 },
+ 
+
+
 //2在弹出的选择菜单中选择站点并确认 两个函数相同 区分开来是为了将出发和终点站分别存在缓存里 以便在confirmRoute函数中使用用以确定是哪条路线，来将该路线的地图标点显示在地图上
 onConfirm2:function(e) {
   const { index } = e.currentTarget.dataset
   this.setValue(e.detail, index)
   console.log(`onConfirm${index}`, e.detail)
+  if (e.detail.value[0]=="yy1"){
+    var m=this.data.yy1
+    this.setData({
+      'markers[1].longitude':m.longitude,
+      'markers[1].latitude':m.latitude,
+      's2':0
+    })
+  }
+  if (e.detail.value[0]=="dj"){
+    var m=this.data.dj
+    this.setData({
+      'markers[1].longitude':m.longitude,
+      'markers[1].latitude':m.latitude,
+      's2':1
+    })
+  }
+  if (e.detail.value[0]=="yy2"){
+    var m=this.data.yy2
+    this.setData({
+      'markers[1].longitude':m.longitude,
+      'markers[1].latitude':m.latitude,
+      's2':2
+    })
+  }
+  if (e.detail.value[0]=="jm&gl"){
+    var m=this.data.jmgl
+    this.setData({
+      'markers[1].longitude':m.longitude,
+      'markers[1].latitude':m.latitude,
+      's2':3
+    })
+  }
 },
 //确定是哪条路线，来将该路线的地图标点显示在地图上
   confirmRoute:function()
   {
+    var s1=this.data.s1
+    var s2=this.data.s2
+    var qq=this.data.routes[s1][s2]
 
+    this.setData({
+      polyline_onshow:qq
+     
+    })
+    console.log("qqq",qq)
   },
   /* 根据用户权限来选择是否显示位置上传按钮 */
+
  userRec:function()
   {
     var that = this;
@@ -260,7 +615,7 @@ onConfirm2:function(e) {
   },
   /* 动态更新坐标点 */
   get_marker:function(snapshot){
-    var markers = [];
+    var markers = this.data.markers;
     var marker = {};
     for(var i = 0; i< snapshot.docs.length; i++){
       marker = {

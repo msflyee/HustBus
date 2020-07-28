@@ -23,9 +23,9 @@
 			"disablePlugins": [],
 			"outputPath": ""
 		},
+		"useIsolateContext": true,
 		"useCompilerModule": false,
-		"userConfirmedUseCompilerModuleSwitch": false,
-		"useIsolateContext": true
+		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"appid": "wxb1fc24feb5e83ddc",
 	"projectname": "HustBus",

@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/lo_fo/lo_fo",
-   "pages/index/index",
-  "pages/location/location"
+    "pages/location/location"
   
   ],
   "entranceDeclare": {

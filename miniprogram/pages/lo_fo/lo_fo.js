@@ -1,5 +1,6 @@
 Page({
   data:{
+    polyline:[],
     marks:[
 
     ],
@@ -121,12 +122,15 @@ Page({
   logo_lib:function(){
     var that=this
     var marks=that.data.marks
+ 
     var lib=that.data.marks_lib
+  
    that.setData({
-      marks:lib
+      marks:lib,
+    
 
     })
-    
+  
   },
   logo_class:function(){
     var that=this
