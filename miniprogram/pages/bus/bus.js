@@ -461,11 +461,11 @@ width:2
     }]
   },
   //将选中的站点显示出来
-  setValue:function(values, key) {
-    this.setData({
+setValue:function(values, key) {
+  this.setData({
         [`value${key}`]: values.value,
         [`displayValue${key}`]: values.label,
-    })
+  })
 },
 //监听在菜单中滑到了哪一个站点
 onValueChange:function(e){
@@ -555,6 +555,7 @@ onConfirm2:function(e) {
 //确定是哪条路线，来将该路线的地图标点显示在地图上
   confirmRoute:function()
   {
+
     var s1=this.data.s1
     var s2=this.data.s2
     var qq=this.data.routes[s1][s2]
@@ -564,6 +565,7 @@ onConfirm2:function(e) {
      
     })
     console.log("qqq",qq)
+
   },
   /* 根据用户权限来选择是否显示位置上传按钮 */
 
@@ -574,6 +576,7 @@ onConfirm2:function(e) {
       _openid:app.globalData.openid
     }).get({
       success:function(res){
+        console.log(app.globalData.openid)
         that.setData({
           latitude:res.data[0].location.latitude,
           longitude:res.data[0].location.longitude,

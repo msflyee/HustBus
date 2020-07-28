@@ -2,8 +2,13 @@
   "pages": [
     "pages/index/index",
     "pages/bus/bus",
-    "pages/campus_map/campus_map"
-  
+
+
+    "pages/campus_map/campus_map",
+    "pages/feedback/feedback",
+    "pages/route/route",
+    "pages/team/team"
+
   ],
   "entranceDeclare": {
     "locationMessage": {
@@ -19,6 +24,7 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
+
     "position":"bottom",
     "borderStyle":"white",
     "list":[{
@@ -36,14 +42,37 @@
         "text":"校园地图",
         "iconPath":"images/lo_fo.png",
         "selectedIconPath":"images/lo_fo_selected.png"
-      }]
+      }],
+
+    "position": "bottom",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index_selected.png"
+      },
+      {
+        "pagePath": "pages/bus/bus",
+        "text": "实时位置",
+        "iconPath": "images/location.png",
+        "selectedIconPath": "images/location_selected.png"
+      },
+      {
+        "pagePath": "pages/campus_map/campus_map",
+        "text": "校园地图",
+        "iconPath": "images/campus.png",
+        "selectedIconPath": "images/campus_selected.png"
+      }
+    ]
+
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2",
-  "permission":{
-    "scope.userLocation":{
-      "desc":"你的位置信息将用于小程序位置接口的服务"
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的服务"
     }
   }
-  
 }
