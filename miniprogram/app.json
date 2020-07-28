@@ -1,8 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/lo_fo/lo_fo",
-    "pages/location/location"
+    "pages/bus/bus",
+    "pages/campus_map/campus_map"
   
   ],
   "entranceDeclare": {
@@ -27,12 +27,12 @@
       "iconPath":"images/index.png",
       "selectedIconPath":"images/index_selected.png"
     },{
-        "pagePath":"pages/location/location",
+        "pagePath":"pages/bus/bus",
         "text":"实时位置",
         "iconPath":"images/location.png",
         "selectedIconPath":"images/location_selected.png"
       },{
-        "pagePath":"pages/lo_fo/lo_fo",
+        "pagePath":"pages/campus_map/campus_map",
         "text":"校园地图",
         "iconPath":"images/lo_fo.png",
         "selectedIconPath":"images/lo_fo_selected.png"
