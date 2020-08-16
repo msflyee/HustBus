@@ -1,7 +1,16 @@
+
+
+
+
 <view class="page">
     <view class="page__bd">
         <wux-search-bar clear focus maxlength = "-1" />
     </view>
+
+</view>
+
+
+
     
     <scroll-view scroll-x class="bg-white nav">
         <view class="flex text-center">
@@ -23,4 +32,5 @@
         
     </view>
 
-</view>
+
+

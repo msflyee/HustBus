@@ -1,8 +1,10 @@
 {
   "navigationBarTitleText":"失物招领",
+
   "enablePullDownRefresh": true,
   "backgroundColor":"#eee",
   "backgroundTextStyle":"dark",
+
   "usingComponents": {
     "wux-search-bar":"/lib/search-bar/index"
   }
