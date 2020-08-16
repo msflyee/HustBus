@@ -1,8 +1,36 @@
 
+
+
+
 <view class="page">
     <view class="page__bd">
         <wux-search-bar clear focus maxlength = "-1" />
     </view>
+
 </view>
+
+
+
+    
+    <scroll-view scroll-x class="bg-white nav">
+        <view class="flex text-center">
+            <view class="cu-item flex-sub {{index==TabCur?'text-orange cur':''}}" wx:for="{{selection}}" 
+          bindtap="tabSelect" data-id="{{index}}">
+            {{item}}
+            </view>
+        </view>
+    </scroll-view>
+
+    <scroll-view hidden = "{{currentid!=0}}">
+        <block wx:for = "{{lostlist}}" wx:key = "_id">
+        <image src = "{{item.fileid}}"></image>
+            <view class ="padding-xl radius shadow bg-white" >123</view>
+        </block>
+    </scroll-view>
+   
+    <view hidden = "{{currentid!=1}}"class ="padding-xl radius shadow bg-white">
+        
+    </view>
+
 
 

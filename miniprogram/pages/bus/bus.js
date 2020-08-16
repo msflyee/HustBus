@@ -10,7 +10,10 @@ Page({
   data:{
     s1:"",
     s2:"",
+
     station:"",
+
+
     diaplayvalue1:"请选择",
     diaplayvalue2:"请选择",
     value:[],
@@ -94,6 +97,7 @@ Page({
       latitude:30.515859,
       longitude:114.416047
     },
+
     zs:{
       longitude:"114.405645" ,
       latitude:" 30.513503",
@@ -481,187 +485,17 @@ Page({
     width: 4,
 
   }],//喻园到校大门
-    routes:[[{
+
+
+    
+
+    flag:false,
+    latitude:"",
+    longitude:"",
+ 
    
-      points: [{
-        longitude:"114.432269" ,
-        latitude:"30.514173"
-        },//韵苑
-         {
-          longitude:"114.427017" ,
-          latitude:"30.514787"
-        },//东九
-        {
-          latitude:"30.515365",
-          longitude:"114.421148"
-        },//喻园
-        {
-          latitude:30.515859,
-          longitude:114.416047
-        },//集贸
-        {
-          latitude:30.515952,
-          longitude:114.415038
-        },//路口
-        {
-          latitude:30.514676,
-          longitude:114.414829
-        },//大活
-        {
-          latitude:30.513068,
-          longitude:114.414647
-        },//路口
-        {
-          latitude:30.513244,
-          longitude:114.412624
-        },//路口
-        {
-          latitude:30.512278,
-          longitude:114.412485
-        },//路口
-        {
-          latitude:30.512102,
-          longitude:114.412533
-        },//图书馆
-        {
-          latitude: 30.509440,
-          longitude:114.412136
-        },//校大门
-      ],
-      color: "#33c9FFDD",
-      width: 4,
-  
-    }],//韵苑到校大门
-    [{
-   
-      points: [{
-        longitude:"114.432269" ,
-        latitude:"30.514173"
-        },//韵苑
-         {
-          longitude:"114.427017" ,
-          latitude:"30.514787"
-        },//东九
-        {
-          latitude:"30.515365",
-          longitude:"114.421148"
-        },//喻园
-        {
-          latitude:30.515859,
-          longitude:114.416047
-        },//集贸
-        {
-          latitude:30.515952,
-          longitude:114.415038
-        },//路口
-        {
-          latitude:30.514676,
-          longitude:114.414829
-        },//大活
-        {
-          latitude:30.513068,
-          longitude:114.414647
-        },//路口
-        {
-          latitude:30.513271,
-          longitude:114.412270
-        },//科技楼
-        {
-          latitude: 30.512851,
-          longitude:114.417227
-        },//机械楼
-        {
-          latitude:30.512504,
-          longitude:114.421014
-        },//路口
-        {
-          latitude:"30.515365",
-          longitude:"114.421148"
-        },//喻园
-        {
-          latitude:30.515859,
-          longitude:114.416047
-        },//集贸
-        {
-          latitude:30.515952,
-          longitude:114.415038
-        },//路口
-        {
-          latitude:30.514676,
-          longitude:114.414829
-        },//大活
-        {
-          latitude:30.513068,
-          longitude:114.414647
-        },//路口
-        {
-          latitude:30.513271,
-          longitude:114.412270
-        },//科技楼
-        {
-          latitude:30.513761,
-          longitude:114.407592
-        },//路口
-        {
-          latitude:30.513503,
-          longitude:114.405645
-        },//紫淞
-      ],
-      color: "#33c9FFDD",
-      width: 4,
-  
-    }],//韵苑到紫淞
-    [{
-   
-      points: [
-        {
-          latitude:"30.515365",
-          longitude:"114.421148"
-        },//喻园
-        {
-          latitude:30.515744,
-          longitude:114.417640
-        },//路口
-        {
-          latitude:30.516687,
-          longitude:114.417742
-        },//路口
-        {
-          latitude: 30.516936,
-          longitude:114.414968
-        },//医院
-        {
-          latitude:30.517130,
-          longitude:114.413048
-        },//路口
-        {
-          latitude:" 30.515268",
-          longitude:"114.412914"
-        },//幼儿园
-        
-        {
-          latitude:30.513244,
-          longitude:114.412624
-        },//路口
-        {
-          latitude:30.512278,
-          longitude:114.412485
-        },//路口
-        {
-          latitude:30.512102,
-          longitude:114.412533
-        },//图书馆
-        {
-          latitude: 30.509440,
-          longitude:114.412136
-        },//校大门
-      ],
-      color: "#33c9FFDD",
-      width: 4,
-  
-    }
-    ]//喻园到校大门
-  ],
+    polyline_onshow:[],
+
 
 
     polyline:[{
@@ -771,8 +605,15 @@ arrowLine:true,
 color:"#33c9FFDD",
 width:2
     }]
+
+
+
   },
+
   //将选中的站点显示出来
+
+  //将选中的站点显示在选择框内
+
 setValue:function(values, key) {
   this.setData({
         [`value${key}`]: values.value,
@@ -822,6 +663,7 @@ onValueChange:function(e){
         's1':3
       })
     }
+
     if (e.detail.value[0]=="zs"){
       var yy1=this.data.zs
       this.setData({
@@ -839,6 +681,7 @@ onValueChange:function(e){
       })
     }
     
+
 },
  
 
@@ -880,6 +723,7 @@ onConfirm2:function(e) {
       's2':3
     })
   }
+
   if (e.detail.value[0]=="zs"){
     var yy1=this.data.zs
     this.setData({
@@ -896,10 +740,12 @@ onConfirm2:function(e) {
       's2':5
     })
   }
+
 },
 //确定是哪条路线，来将该路线的地图标点显示在地图上
   confirmRoute:function()
   {
+
     var s1=this.data.s1
     var s2=this.data.s2
     var routes1=this.data.routes1
@@ -1136,6 +982,10 @@ onConfirm2:function(e) {
 
   /* 根据用户权限来选择是否显示位置上传按钮 */
 
+
+
+  /* 根据用户权限来选择是否显示位置上传按钮 */
+
  userRec:function()
   {
     var that = this;
@@ -1183,7 +1033,11 @@ onConfirm2:function(e) {
       })
     },5000)
   },
+
   /* 动态更新坐标点 */
+
+  /* 动态更新校车坐标点 */
+
   get_marker:function(snapshot){
     var markers = this.data.markers;
     var marker = {};
@@ -1200,7 +1054,11 @@ onConfirm2:function(e) {
     }
     return markers;
   },
+
   /* 监听数据库变化并将最新所有坐标点显示在页面上 */
+
+  /* 监听数据库变化并将最新校车坐标点显示在页面上 */
+
   showLoc:function(){
         var that = this;
         setInterval(function(){
