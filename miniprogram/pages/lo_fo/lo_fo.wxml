@@ -4,16 +4,5 @@
         <wux-search-bar clear focus maxlength = "-1" />
     </view>
 </view>
-<!--pages/lo_fo/lo_fo.wxml-->
-<map longitude="114.417329" latitude="30.513248" style="width:100%;height:100vh" scale="14" markers="{{marks}}" rotate="180°" polyline="{{polyline}}">
-    <view class="lib"><cover-image class="logo"  src="../../images/图书馆logo.png"  bindtap="logo_lib" ></cover-image></view>
-    <view class="classroom"><cover-image class="logo" src="../../images/教室logo.png"  bindtap="logo_class"></cover-image></view>
-     <view class="canteen"><cover-image class="logo"  src="../../images/食堂logo.png"  bindtap="" ></cover-image></view>
-     <view class="playground"><cover-image class="logo"  src="../../images/运动logo.png"  bindtap="logo_playground" ></cover-image></view>
-     <view class="hospital"><cover-image class="logo"  src="../../images/医院logo.png"  bindtap="" ></cover-image></view>
-     <view class="supermarket"><cover-image class="logo"  src="../../images/超市logo.png"  bindtap="logo_supermarket" ></cover-image></view>
-     <view class="profession"><cover-image class="logo"  src="../../images/学院logo.png"  bindtap="" ></cover-image></view>
-     <view class="dormitory"><cover-image class="logo"  src="../../images/宿舍logo.png"  bindtap="" ></cover-image></view>
-</map>
- <!--以图书馆为中心的地图显示-->
-<text>lo_fo</text>
+
+
