@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "basics": "/lib1/basics/home/home",
+    "component": "/lib1/component/home/home",
+    "plugin": "/lib1/plugin/home/home",
+    "about": "/lib1/about/home/home"
+  }
+}

@@ -460,7 +460,7 @@ color:"#33c9FFDD",
 width:2
     }]
   },
-  //将选中的站点显示出来
+  //将选中的站点显示在选择框内
 setValue:function(values, key) {
   this.setData({
         [`value${key}`]: values.value,
@@ -566,8 +566,8 @@ onConfirm2:function(e) {
     })
     console.log("qqq",qq)
   },
-  /* 根据用户权限来选择是否显示位置上传按钮 */
 
+  /* 根据用户权限来选择是否显示位置上传按钮 */
  userRec:function()
   {
     var that = this;
@@ -615,7 +615,7 @@ onConfirm2:function(e) {
       })
     },5000)
   },
-  /* 动态更新坐标点 */
+  /* 动态更新校车坐标点 */
   get_marker:function(snapshot){
     var markers = this.data.markers;
     var marker = {};
@@ -632,7 +632,7 @@ onConfirm2:function(e) {
     }
     return markers;
   },
-  /* 监听数据库变化并将最新所有坐标点显示在页面上 */
+  /* 监听数据库变化并将最新校车坐标点显示在页面上 */
   showLoc:function(){
         var that = this;
         setInterval(function(){
