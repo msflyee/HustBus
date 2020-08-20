@@ -3200,12 +3200,14 @@ scroll-view.cu-steps .cu-item {
 }
 
 .padding-xl {
-	padding: 50rpx;
-	width: 350rpx;
+	padding: 15rpx;
+	width: 710rpx;
 	height:300rpx;
-	top:10rpx;
-	left:15rpx;
-	position:relative;
+	margin-left: 20rpx;
+	margin-right:20rpx;
+	margin-top: 15rpx;
+	display:flex;
+	flex-direction: row;
 }
 
 .padding-top-xs {

@@ -1,0 +1,23 @@
+.images{
+  height:250rpx;
+  width:300rpx;
+  margin-top: 10rpx;
+}
+
+
+
+.info{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40rpx;
+}
+
+.text1{
+  font-size: 27rpx;
+}
+
+.text{
+  font-size: 27rpx;
+  margin-top: 20rpx;
+}

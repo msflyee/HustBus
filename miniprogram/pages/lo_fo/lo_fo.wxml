@@ -1,17 +1,9 @@
-
-
-
-
 <view class="page">
     <view class="page__bd">
         <wux-search-bar clear focus maxlength = "-1" />
     </view>
 
 </view>
-
-
-
-    
     <scroll-view scroll-x class="bg-white nav">
         <view class="flex text-center">
             <view class="cu-item flex-sub {{index==TabCur?'text-orange cur':''}}" wx:for="{{selection}}" 
@@ -23,14 +15,35 @@
 
     <scroll-view hidden = "{{currentid!=0}}">
         <block wx:for = "{{lostlist}}" wx:key = "_id">
-        <image src = "{{item.fileid}}"></image>
-            <view class ="padding-xl radius shadow bg-white" >123</view>
+            <view class ="padding-xl radius shadow bg-white" >
+                <image class = "images" src = "{{item.fileId}}" mode ="scalToFill"></image>
+                <view class = "info">
+                    <text class = "text1">物品：{{item.thing_name}}</text>
+                    <text class = "text">失主：{{item.name}}</text>
+                    <text class = "text">遗失路线：{{item.lost_route}}</text>
+                    <text class = "text">遗失时间：{{item.lost_time}}</text>
+                    <text class = "text">联系方式：{{item.number}}</text>
+                </view>
+            </view>
         </block>
     </scroll-view>
    
-    <view hidden = "{{currentid!=1}}"class ="padding-xl radius shadow bg-white">
-        
-    </view>
+    <scroll-view hidden = "{{currentid!=1}}">
+        <block wx:for = "{{foundlist}}" wx:key = "_id">
+            <view class ="padding-xl radius shadow bg-white" >
+                <image class = "images" src = "{{item.fileId}}" mode ="scalToFill"></image>
+                <view class = "info">
+                    <text class = "text1">物品：{{item.thing_name}}</text>
+                    <text class = "text">拾主：{{item.name}}</text>
+                    <text class = "text">拾得路线：{{item.founded_route}}</text>
+                    <text class = "text">拾得时间：{{item.founded_time}}</text>
+                    <text class = "text">联系方式：{{item.number}}</text>
+                </view>
+            </view>
+        </block>
+    </scroll-view>
+    
+
 
 
 

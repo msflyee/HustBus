@@ -24,10 +24,7 @@
 			"outputPath": ""
 		},
 		"useIsolateContext": true,
-
-		"useCompilerModule": false,
-
-
+		"useCompilerModule": true,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"appid": "wxb1fc24feb5e83ddc",
