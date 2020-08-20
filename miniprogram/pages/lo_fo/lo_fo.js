@@ -1,7 +1,4 @@
 
-Page({}
-
-)
 
 const db = wx.cloud.database({env:'hb-jndbr'});
 
